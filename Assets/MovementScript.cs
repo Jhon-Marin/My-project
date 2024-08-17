@@ -8,6 +8,8 @@ public class MovementScript : MonoBehaviour
     // Start is called before the first frame update
     private AbilityMC abilityScript;
     bool TeletransportValue = true;
+    public float sensitivity;  // Sensibilidad del cursor (1.0 es la sensibilidad normal)
+    private Vector2 mousePosition;    // Almacena la posición del cursor
     void Start()
     {
         
@@ -17,6 +19,7 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cursor.visible = false;
         // Obtiene la posición del cursor en la pantalla
         Vector3 mousePosition = Input.mousePosition;
 
@@ -30,7 +33,7 @@ public class MovementScript : MonoBehaviour
             if (TeletransportValue)
             {
                 // Asigna la posición del objeto a la posición calculada en el mundo 2D (X, Y)
-                transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
+                transform.position = new Vector3(mousePosition.x , mousePosition.y, transform.position.z);
             }
         }
         else
