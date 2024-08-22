@@ -24,8 +24,6 @@ public class Movement_DPA : MonoBehaviour
 
         if (DistanceI > moveDistance)
         {
-           
-            Debug.Log(DistanceI);
             
             direction++;
             if (direction > 4)
