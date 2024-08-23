@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AbilityMC : MonoBehaviour
 {
-
+    public GameObject sword;
     public bool teletransport = true;
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,13 @@ public class AbilityMC : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Debug.Log("La tecla Q fue presionada");
-            // Lógica adicional para la tecla Q
+            Instantiate(sword, transform.position, transform.rotation);
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            Debug.Log("La teclaQ fue soltada");
+            // Lógica cuando se suelta la tecla E
+            
         }
 
         if (Input.GetKeyDown(KeyCode.W))
