@@ -18,12 +18,14 @@ public class AbilityMC : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Debug.Log("La tecla Q fue presionada");
-            Instantiate(sword, transform.position, transform.rotation);
+            sword.SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Q))
         {
             Debug.Log("La teclaQ fue soltada");
-            // Lógica cuando se suelta la tecla E
+            // Lógica cuando se suelta la tecla Q
+            sword.SetActive(false);
+
             
         }
 
