@@ -27,9 +27,7 @@ public class DS_attack : MonoBehaviour
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         GameObject nearestEnemy = null;
-        float
-        nearestDistance = Mathf.Infinity;
-
+        float nearestDistance = Mathf.Infinity;
         foreach (GameObject enemy in enemies)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);

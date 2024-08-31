@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4588316935846478351}
   m_Layer: 0
   m_Name: Dark_Intrusive_Thoughts
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
