@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 803703806831151168}
   - component: {fileID: 7947782663719481684}
   - component: {fileID: 483563473477546036}
-  - component: {fileID: 5307931039691856920}
+  - component: {fileID: -7302737152510236554}
   m_Layer: 0
   m_Name: 'Bad_Seeking_Comment '
   m_TagString: Untagged
@@ -164,7 +164,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5307931039691856920
+--- !u!114 &-7302737152510236554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,3 +180,4 @@ MonoBehaviour:
   screenLeft: 0
   screenTop: 0
   screenBottom: 0
+  background: {fileID: 6481033534606008322, guid: ff3a74f1e91f4a9448ea4bb4fc977dd5, type: 3}

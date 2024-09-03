@@ -18,12 +18,14 @@ public class ObjectPool : MonoBehaviour
     }
     void Start()
     {
+        /*
         for (int i = 0; i < amountToPool; i++)
         {
             GameObject obj = Instantiate(objectPrefab);
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
+        */
     }
     public GameObject GetPooledObject()
     {
